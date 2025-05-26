@@ -153,13 +153,19 @@ body {
 /* 菜单样式调整 */
 .ant-menu {
   border-bottom: none !important;
+  color: #ffffff !important;
 }
 
-.ant-menu-item {
+/* 所有菜单项通用样式 */
+.ant-menu-item,
+.ant-menu-submenu,
+.ant-menu-submenu-title {
+  color: #ffffff !important;
   border-bottom: none !important;
 }
 
-.ant-menu-item:hover {
+.ant-menu-item:hover,
+.ant-menu-submenu:hover .ant-menu-submenu-title {
   color: #ffffff !important;
   border-bottom: none !important;
 }
@@ -167,15 +173,6 @@ body {
 .ant-menu-item-selected {
   color: var(--primary-color) !important;
   border-bottom: none !important;
-}
-
-/* 卡片内容样式 */
-.ant-card-head {
-  border-bottom: 1px solid var(--border-color) !important;
-}
-
-.ant-divider {
-  border-color: var(--border-color) !important;
 }
 
 /* 导航菜单样式 */
@@ -201,7 +198,8 @@ body {
 .ant-menu-horizontal > .ant-menu-item-active,
 .ant-menu-horizontal > .ant-menu-submenu-active,
 .ant-menu-horizontal > .ant-menu-item-open,
-.ant-menu-horizontal > .ant-menu-submenu-open {
+.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-submenu:hover > .ant-menu-submenu-title {
   color: #ffffff !important;
   background: rgba(255, 255, 255, 0.15) !important;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
@@ -275,4 +273,24 @@ body {
 
 .ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
   color: var(--primary-color) !important;
+}
+
+/* 确保子菜单中的文字也是白色 */
+.ant-menu-submenu-title,
+.ant-menu-sub .ant-menu-item {
+  color: #ffffff !important;
+}
+
+/* 子菜单标题文字颜色 */
+.ant-menu-submenu > .ant-menu-submenu-title {
+  color: #ffffff !important;
+}
+
+/* 卡片内容样式 */
+.ant-card-head {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.ant-divider {
+  border-color: var(--border-color) !important;
 } 
