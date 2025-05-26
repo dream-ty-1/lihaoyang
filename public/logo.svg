@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1890ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#096dd9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10,10)">
+    <path d="M15,0 L25,0 A5,5 0 0 1 30,5 L30,25 A5,5 0 0 1 25,30 L5,30 A5,5 0 0 1 0,25 L0,15 L15,0 Z" fill="url(#gradient)"/>
+    <path d="M2,15 L15,2 L15,15 L2,15" fill="#fff" opacity="0.3"/>
+  </g>
+  <text x="50" y="32" font-family="Arial" font-weight="bold" font-size="20" fill="#1890ff">
+    智能数据科技
+  </text>
+</svg> 

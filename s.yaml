@@ -1,0 +1,26 @@
+edition: 1.0.0
+name: web-app
+access: default
+
+services:
+  web-hosting:
+    component: static
+    props:
+      bucket: my-bucket
+      src:
+        codeUri: ./dist
+        index: index.html
+        error: index.html
+      region: cn-hangzhou
+      cors:
+        - allowedOrigin: '*'
+          allowedMethod: ['GET']
+          allowedHeader: ['*']
+          maxAge: 86400
+      customDomains:
+        - domainName: auto
+          https:
+            switch: on
+            certInfo:
+              switch: on
+              certType: default 
