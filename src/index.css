@@ -91,13 +91,16 @@ body {
   z-index: 1000;
   transition: all 0.3s ease;
   border-bottom: 1px solid var(--border-color);
+  background: rgba(31, 31, 31, 0.95) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .site-header.scrolled {
-  background: rgba(31, 31, 31, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--border-color);
+  background: rgba(31, 31, 31, 0.98) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.15);
 }
 
 /* 内容区域 */
@@ -174,6 +177,7 @@ body {
 /* 导航菜单样式 */
 .ant-menu-horizontal {
   border-bottom: none !important;
+  background: transparent !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item,
@@ -182,6 +186,8 @@ body {
   margin: 0 4px !important;
   border-radius: 4px;
   border: none !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover,
@@ -193,7 +199,8 @@ body {
 .ant-menu-horizontal > .ant-menu-item-selected,
 .ant-menu-horizontal > .ant-menu-submenu-selected {
   color: var(--primary-color) !important;
-  background: rgba(24, 144, 255, 0.1) !important;
+  background: rgba(24, 144, 255, 0.15) !important;
+  text-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
 }
 
 .ant-menu-horizontal > .ant-menu-item::after,
