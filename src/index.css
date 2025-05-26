@@ -188,7 +188,7 @@ body {
   border: none !important;
   font-size: 16px !important;
   font-weight: 500 !important;
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: #ffffff !important;
   transition: all 0.3s ease !important;
 }
 
@@ -197,7 +197,13 @@ body {
 .ant-menu-horizontal > .ant-menu-item-active,
 .ant-menu-horizontal > .ant-menu-submenu-active,
 .ant-menu-horizontal > .ant-menu-item-open,
-.ant-menu-horizontal > .ant-menu-submenu-open,
+.ant-menu-horizontal > .ant-menu-submenu-open {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* 选中状态使用蓝色 */
 .ant-menu-horizontal > .ant-menu-item-selected,
 .ant-menu-horizontal > .ant-menu-submenu-selected {
   color: var(--primary-color) !important;
@@ -223,12 +229,17 @@ body {
   padding: 8px 20px !important;
   margin: 4px 8px !important;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: #ffffff !important;
   transition: all 0.3s ease !important;
 }
 
 .ant-menu-submenu-popup .ant-menu-item:hover,
-.ant-menu-submenu-popup .ant-menu-item-active,
+.ant-menu-submenu-popup .ant-menu-item-active {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
 .ant-menu-submenu-popup .ant-menu-item-selected {
   background: rgba(24, 144, 255, 0.15) !important;
   color: var(--primary-color) !important;
@@ -241,24 +252,23 @@ body {
   font-size: 18px;
   margin-right: 8px;
   vertical-align: -0.2em;
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: #ffffff !important;
 }
 
-.ant-menu-item:hover .anticon,
-.ant-menu-item-selected .anticon,
-.ant-menu-submenu:hover .anticon,
-.ant-menu-submenu-selected .anticon {
+.ant-menu-item-selected .anticon {
   color: var(--primary-color) !important;
 }
 
 /* 子菜单箭头样式 */
 .ant-menu-submenu-arrow {
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: #ffffff !important;
   transition: all 0.3s ease !important;
 }
 
-.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow,
-.ant-menu-submenu-active > .ant-menu-submenu-title > .ant-menu-submenu-arrow,
-.ant-menu-submenu-open > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+  color: #ffffff !important;
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
   color: var(--primary-color) !important;
 } 
