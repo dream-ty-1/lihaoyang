@@ -156,13 +156,17 @@ body {
 }
 
 .ant-menu-item {
-  border-bottom: 2px solid transparent !important;
+  border-bottom: none !important;
 }
 
-.ant-menu-item:hover,
+.ant-menu-item:hover {
+  color: #ffffff !important;
+  border-bottom: none !important;
+}
+
 .ant-menu-item-selected {
-  border-bottom: 2px solid var(--primary-color) !important;
   color: var(--primary-color) !important;
+  border-bottom: none !important;
 }
 
 /* 卡片内容样式 */
@@ -235,14 +239,14 @@ body {
 
 .ant-menu-submenu-popup .ant-menu-item:hover,
 .ant-menu-submenu-popup .ant-menu-item-active {
-  background: rgba(255, 255, 255, 0.15) !important;
   color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .ant-menu-submenu-popup .ant-menu-item-selected {
-  background: rgba(24, 144, 255, 0.15) !important;
   color: var(--primary-color) !important;
+  background: rgba(24, 144, 255, 0.15) !important;
   text-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
 }
 
