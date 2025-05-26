@@ -189,6 +189,7 @@ body {
   font-size: 16px !important;
   font-weight: 500 !important;
   color: rgba(255, 255, 255, 0.95) !important;
+  transition: all 0.3s ease !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover,
@@ -199,14 +200,9 @@ body {
 .ant-menu-horizontal > .ant-menu-submenu-open,
 .ant-menu-horizontal > .ant-menu-item-selected,
 .ant-menu-horizontal > .ant-menu-submenu-selected {
-  color: #fff !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-.ant-menu-horizontal > .ant-menu-item::after,
-.ant-menu-horizontal > .ant-menu-submenu::after {
-  display: none !important;
+  color: var(--primary-color) !important;
+  background: rgba(24, 144, 255, 0.15) !important;
+  text-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
 }
 
 /* 子菜单样式 */
@@ -227,19 +223,16 @@ body {
   padding: 8px 20px !important;
   margin: 4px 8px !important;
   border-radius: 4px;
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  transition: all 0.3s ease !important;
 }
 
 .ant-menu-submenu-popup .ant-menu-item:hover,
 .ant-menu-submenu-popup .ant-menu-item-active,
 .ant-menu-submenu-popup .ant-menu-item-selected {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #fff !important;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-.ant-menu-submenu-popup .ant-menu-item .anticon {
-  margin-right: 8px;
+  background: rgba(24, 144, 255, 0.15) !important;
+  color: var(--primary-color) !important;
+  text-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
 }
 
 /* 导航栏图标样式 */
@@ -248,11 +241,20 @@ body {
   font-size: 18px;
   margin-right: 8px;
   vertical-align: -0.2em;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.ant-menu-item:hover .anticon,
+.ant-menu-item-selected .anticon,
+.ant-menu-submenu:hover .anticon,
+.ant-menu-submenu-selected .anticon {
+  color: var(--primary-color) !important;
 }
 
 /* 子菜单箭头样式 */
 .ant-menu-submenu-arrow {
-  color: var(--text-color-secondary) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  transition: all 0.3s ease !important;
 }
 
 .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow,
