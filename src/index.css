@@ -188,6 +188,7 @@ body {
   border: none !important;
   font-size: 16px !important;
   font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .ant-menu-horizontal > .ant-menu-item:hover,
@@ -198,9 +199,9 @@ body {
 .ant-menu-horizontal > .ant-menu-submenu-open,
 .ant-menu-horizontal > .ant-menu-item-selected,
 .ant-menu-horizontal > .ant-menu-submenu-selected {
-  color: var(--primary-color) !important;
-  background: rgba(24, 144, 255, 0.15) !important;
-  text-shadow: 0 0 8px rgba(24, 144, 255, 0.3);
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .ant-menu-horizontal > .ant-menu-item::after,
@@ -210,11 +211,11 @@ body {
 
 /* 子菜单样式 */
 .ant-menu-submenu-popup {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ant-menu-submenu-popup > .ant-menu {
@@ -226,14 +227,15 @@ body {
   padding: 8px 20px !important;
   margin: 4px 8px !important;
   border-radius: 4px;
-  color: var(--text-color) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .ant-menu-submenu-popup .ant-menu-item:hover,
 .ant-menu-submenu-popup .ant-menu-item-active,
 .ant-menu-submenu-popup .ant-menu-item-selected {
   background: rgba(255, 255, 255, 0.1) !important;
-  color: var(--primary-color) !important;
+  color: #fff !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .ant-menu-submenu-popup .ant-menu-item .anticon {
